@@ -1,6 +1,17 @@
-## Steps for Angular Application Deployment using Github Pages
 
 This repository demonstrates the use of deployment using Github pages for Angular Application .
+
+<div style="text-align:center">
+<a href="https://shan7030.github.io/angular-app-github-pages-example/"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=website&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
+<img src="
+https://img.shields.io/badge/Angular-Angular%20Project-red" alt="Angular"/>
+<img src="
+https://img.shields.io/badge/Github-Github%20Pages-lightgrey" alt="Angular"/>
+</div>
+
+The deployed application can be found [here](https://shan7030.github.io/angular-app-github-pages-example/)  
+
+## Steps for Angular Application Deployment using Github Pages
 
 <ol>
     <li>🚀 Create new Angular Project (You can create one using angular-cli) </li>

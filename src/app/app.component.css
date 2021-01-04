@@ -1,0 +1,39 @@
+p {
+    color: #d9fa6a;    
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 75px;
+    text-align: center;
+}
+
+.header-container {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background: #023841;
+}
+
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+ol {
+    max-width: 800px;
+}
+
+li {
+    margin:10px;
+}
+
+code {
+    background: #ebefed;
+    display: block;
+    padding: 10px; 
+    margin: 5px;
+}

@@ -1,27 +1,36 @@
-# GfgExample
+## Angular Deployment Github Pages Steps
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This repository demonstrates the use of deployment using Github pages for Angular Application .
 
-## Development server
+<ol>
+    <li>🚀 Create new Angular Project (You can create one using angular-cli) </li>
+    <li>🔨 Now create the web-app according to your need, you can use angular-cli for code scaffolding</li>
+    <li>🚀 Create new Repo on Github</li>
+    <li>🗃️ Clone the git repo locally using : <br>
+      <code> git clone https://github.com/username/reponame.git  </code>
+    </li>
+    <li> Open terminal/command line (make sure you have git installed), make sure that you are in project directory</li>
+    <li> Type the following commands to push the code on github: <br>
+      <code>
+            git init <br>
+            git add . <br>
+            git commit -m "Initial Commit" <br>
+            git remote add origin https://github.com/username/reponame.git <br>
+            git push -u origin master <br>
+      </code>
+    </li>
+    <li> Now, go to github repo and your code should be uploaded to master branch on github </li>
+    <li> Next Install the angular-gh-pages using npm: <br>
+      <code>npm install -g angular-cli-ghpages</code>
+    </li>
+    <li> Next, production build the angular application using: <br>
+      <code> ng build --prod --base-href "https://username.github.io/reponame/" </code>
+    </li>
+    <li>Atlast, create the gh-pages branch, also upload the build and bundled code to this branch using : <br>
+      <code> ngh --dir dist/reponame </code>
+    </li>
+    <li>🥵 Now you application is successfully deployed using Github pages</li>
+    <li>🚀 You can find the link of deployed application in Settings Tab -> Github Pages </li>
+  </ol>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+For more detailed steps for installation of angular-cli, git, etc. you can refer <a href="https://www.geeksforgeeks.org/deployment-of-angular-application-using-github-pages/">this</a> article on Geeks for Geeks by me.

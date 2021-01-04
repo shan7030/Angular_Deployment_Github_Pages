@@ -1,7 +1,46 @@
-<h2 [ngStyle]="{'color':'#00FF00'}">
-  Geeks For Geeks Example 
-</h2>
+<div class="header-container">
+  <p>
+    Sample project template explaining Angular Deployment using Github Pages
+  </p>
+</div>
 
-<h3>
-  Simple App Deployment using Github Pages
-</h3>
+<hr>
+
+<p [ngStyle]="{'font-size':'50px','margin': '30px','color':'#023841'}">Steps for Deployment:</p>
+
+<div class="steps-container">
+  <ol>
+    <li>🚀 Create new Angular Project (You can create one using angular-cli) </li>
+    <li>🔨 Now create the web-app according to your need, you can use angular-cli for code scaffolding</li>
+    <li>🚀 Create new Repo on Github</li>
+    <li>🗃️ Clone the git repo locally using : <br>
+      <code> git clone https://github.com/username/reponame.git  </code>
+    </li>
+    <li> Open terminal/command line (make sure you have git installed), make sure that you are in project directory</li>
+    <li> Type the following commands to push the code on github: <br>
+      <code>
+            git init <br>
+            git add . <br>
+            git commit -m "Initial Commit" <br>
+            git remote add origin https://github.com/username/reponame.git <br>
+            git push -u origin master <br>
+      </code>
+    </li>
+    <li> Now, go to github repo and your code should be uploaded to master branch on github </li>
+    <li> Next Install the angular-gh-pages using npm: <br>
+      <code>npm install -g angular-cli-ghpages</code>
+    </li>
+    <li> Next, production build the angular application using: <br>
+      <code> ng build --prod --base-href "https://username.github.io/reponame/" </code>
+    </li>
+    <li>Atlast, create the gh-pages branch, also upload the build and bundled code to this branch using : <br>
+      <code> ngh --dir dist/reponame </code>
+    </li>
+    <li>🥵 Now you application is successfully deployed using Github pages</li>
+    <li>🚀 You can find the link of deployed application in Settings Tab -> Github Pages </li>
+  </ol>
+</div>
+
+<p [ngStyle]="{'font-size':'20px','margin': '30px','color':'#023841'}">
+For more detailed steps for installation of angular-cli, git, etc. you can refer <a href="https://www.geeksforgeeks.org/deployment-of-angular-application-using-github-pages/">this</a> article on Geeks for Geeks by me.
+</p>

@@ -1,4 +1,4 @@
-## Angular Deployment Github Pages Steps
+## Angular Application Deployment using Github Pages Steps
 
 This repository demonstrates the use of deployment using Github pages for Angular Application .
 
